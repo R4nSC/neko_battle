@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.* ?>
+<?import javafx.scene.layout.*?>
+
+<VBox onKeyPressed="#keyAction" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MapGameController">
+  <children>
+    <AnchorPane minHeight="87.0" prefHeight="87.0" prefWidth="525.0">
+      <children>
+        <Button layoutX="54.0" layoutY="5.0" onAction="#upButtonAction" text="↑" />
+        <Button layoutX="54.0" layoutY="49.0" onAction="#downButtonAction" text="↓" />
+        <Button layoutX="91.0" layoutY="27.0" onAction="#rightButtonAction" text="→" />
+        <Button layoutX="16.0" layoutY="27.0" onAction="#leftButtonAction" text="←" />
+        <Button layoutX="163.0" layoutY="6.0" onAction="#MenuButtonAction" prefHeight="62.0" prefWidth="100.0" text="Menu" />
+        <Label fx:id="floorLabel" layoutX="300.0" layoutY="16.0" prefHeight="49.0" prefWidth="95.0" style="-fx-font-size: 20px;" />
+        <HBox fx:id="KeyImage" layoutX="416.0" layoutY="2.0" prefHeight="87.0" prefWidth="95.0" />
+      </children>
+    </AnchorPane>
+    <GridPane fx:id="mapGrid" prefHeight="360.0" prefWidth="360.0" />
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+</VBox>

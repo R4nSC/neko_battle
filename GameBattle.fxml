@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="700.999800000005" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GameBattleController">
+  <children>
+    <Label layoutX="10.0" layoutY="180.0" prefHeight="30.0" prefWidth="130.0" style="-fx-text-background-color: white; -fx-border-style: solid outside; -fx-border-width: 2;  -fx-border-radius: 5px 5px 0px 0px; -fx-border-color: #19B7F1; -fx-background-color: #19B7F1;" text="Player" />
+    <HBox layoutX="8.0" layoutY="210.0" prefHeight="130.0" prefWidth="675.0" style="-fx-border-style: solid inside; -fx-border-width: 2;  -fx-border-radius: 0px 8px 8px 8px; -fx-border-color: #19B7F1;">
+      <Label fx:id="player1" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="player2" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="player3" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="player4" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="player5" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="player6" prefHeight="120.0" prefWidth="110.0" />
+    </HBox>
+    <Label layoutX="551.0" layoutY="140.0" prefHeight="30.0" prefWidth="130.0" style="-fx-text-background-color: white; -fx-border-style: solid outside; -fx-border-width: 2;  -fx-border-radius: 0px 0px 5px 5px; -fx-border-color: #F45353; -fx-background-color: #F45353;" text="Enemy" />
+    <HBox layoutX="8.0" layoutY="8.0" prefHeight="130.0" prefWidth="675.0" style="-fx-border-style: solid inside; -fx-border-width: 2;  -fx-border-radius: 8px 8px 0px 8px; -fx-border-color: #F45353;">
+      <Label fx:id="enemy1" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="enemy2" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="enemy3" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="enemy4" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="enemy5" prefHeight="120.0" prefWidth="110.0" />
+      <Label fx:id="enemy6" prefHeight="120.0" prefWidth="110.0" />
+    </HBox>
+    <TitledPane animated="false" layoutX="436.0" layoutY="364.0" minWidth="169.0" prefHeight="212.0" prefWidth="251.0" text="Battle Log">
+      <content>
+        <VBox fx:id="BattleLog" prefHeight="200.0" prefWidth="100.0" />
+      </content>
+    </TitledPane>
+    <Label fx:id="BattleStatus" layoutX="175.0" layoutY="154.0" prefHeight="40.0" prefWidth="341.0" />
+    <Label fx:id="PlayerNextAction" layoutX="26.0" layoutY="358.0" prefHeight="40.0" prefWidth="365.0" />
+    <AnchorPane layoutX="20.0" layoutY="402.0" prefHeight="172.0" prefWidth="393.0">
+      <children>
+	<Button fx:id="AttackButton" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="Attack" onAction="#AttackAction" />
+	<Button fx:id="EnemyButton" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="EnemyTurn" onAction="#EnemyAction" />
+	<Button fx:id="OKButton" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="OK" onAction="#OKAction" />
+        <Button fx:id="DefenseButton" layoutX="229.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="Defense" onAction="#DefenseAction" />
+        <Button fx:id="ChargeButton" layoutX="48.0" layoutY="96.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="Charge" onAction="#ChargeAction" />
+        <Button fx:id="JoinButton" layoutX="229.0" layoutY="96.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="Join" onAction="#JoinAction" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

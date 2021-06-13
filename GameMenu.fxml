@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.* ?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GameMenuController">
+  <center>
+    <GridPane prefWidth="1000.0">
+      <padding>
+        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+      </padding>
+      
+      <VBox fx:id="Chara1" disable="false" focusTraversable="false" prefWidth="250.0" style="-fx-border-style: solid inside; -fx-border-width: 2;  -fx-border-radius: 8; -fx-border-color: #BCBBBA;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Label fx:id="CharaName_1" prefWidth="250.0" style="-fx-font:normal 23 Tahoma" />
+        <Label fx:id="CharaLabel_1" mnemonicParsing="false" mouseTransparent="false" prefHeight="130.0" prefWidth="250.0" style="-fx-font:normal 15 Tahoma" />
+        <padding>
+          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+        </padding>
+        <GridPane.margin>
+          <Insets bottom="8.0" left="12.0" right="12.0" top="8.0" fx:id="x1" />
+        </GridPane.margin>
+      </VBox>
+      
+      <VBox fx:id="Chara2" prefWidth="250.0" style="-fx-border-style: solid inside; -fx-border-width: 2;  -fx-border-radius: 8; -fx-border-color: #BCBBBA;" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="0">
+        <padding>
+          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+        </padding>
+        <Label fx:id="CharaName_2" prefWidth="250.0" style="-fx-font:normal 23 Tahoma" />
+        <Label fx:id="CharaLabel_2" prefHeight="130.0" prefWidth="250.0" style="-fx-font:normal 15 Tahoma" />
+      </VBox>
+      
+      <VBox fx:id="Chara3" prefWidth="250.0" style="-fx-border-style: solid inside; -fx-border-width: 2;  -fx-border-radius: 8; -fx-border-color: #BCBBBA;" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="1">
+        <padding>
+          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+        </padding>
+        <Label fx:id="CharaName_3" prefWidth="250.0" style="-fx-font:normal 23 Tahoma" />
+        <Label fx:id="CharaLabel_3" prefHeight="130.0" prefWidth="250.0" style="-fx-font:normal 15 Tahoma" />
+      </VBox>
+      
+      <VBox fx:id="Chara4" prefWidth="250.0" style="-fx-border-style: solid inside; -fx-border-width: 2;  -fx-border-radius: 8; -fx-border-color: #BCBBBA;" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="1">
+        <padding>
+          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+        </padding>
+        <Label fx:id="CharaName_4" prefWidth="250.0" style="-fx-font:normal 23 Tahoma" />
+        <Label fx:id="CharaLabel_4" prefHeight="130.0" prefWidth="250.0" style="-fx-font:normal 15 Tahoma" />
+      </VBox>
+      
+      <VBox fx:id="Chara5" prefWidth="250.0" style="-fx-border-style: solid inside; -fx-border-width: 2; -fx-border-radius: 8; -fx-border-color: #BCBBBA;" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="2">
+        <padding>
+          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+        </padding>
+        <Label fx:id="CharaName_5" prefWidth="250.0" style="-fx-font:normal 23 Tahoma" />
+        <Label fx:id="CharaLabel_5" prefHeight="130.0" prefWidth="250.0" style="-fx-font:normal 15 Tahoma" />
+      </VBox>
+      
+      <VBox fx:id="Chara6" prefWidth="250.0" style="-fx-border-style: solid inside; -fx-border-width: 2; -fx-border-radius: 8; -fx-border-color: #BCBBBA;" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="2">
+        <padding>
+          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+        </padding>
+        <Label fx:id="CharaName_6" prefWidth="250.0" style="-fx-font:normal 23 Tahoma" />
+        <Label fx:id="CharaLabel_6" prefHeight="130.0" prefWidth="250.0" style="-fx-font:normal 15 Tahoma" />
+      </VBox>
+      
+    </GridPane>
+  </center>
+  <left>
+    <FlowPane orientation="VERTICAL">
+      <Button prefHeight="50.0" prefWidth="130.0" text="Party" />
+      <Button prefHeight="50.0" prefWidth="130.0" text="Item" />
+      <Button prefHeight="50.0" prefWidth="130.0" text="Exit" onAction="#ExitAction" />
+    </FlowPane>
+  </left>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+</BorderPane>
